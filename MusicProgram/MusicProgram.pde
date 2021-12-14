@@ -1,9 +1,15 @@
 //Global Variables
 
-void setup() {} //End setup()
+void setup() {
+  fullScreen();
+  population();
+} //End setup()
 
-void draw() {} //End draw()
+void draw() {
+} //End draw()
 
-void keyPressed() {} //End keyPressed()
+void keyPressed() {
+} //End keyPressed()
 
-void mousePressed() {} //End mousePressed 
+void mousePressed() {
+} //End mousePressed 
