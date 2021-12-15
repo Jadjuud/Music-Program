@@ -22,7 +22,7 @@ void powerButtonDraw() {
     hoverOverButtonFill();
   } 
   //Text
-  textCode(powerButton, 30, powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+  textCode(powerButton, 30, powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight); //30
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
