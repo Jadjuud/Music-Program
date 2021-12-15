@@ -6,6 +6,7 @@ void setup() {
 } //End setup()
 
 void draw() {
+  powerButtonDraw();
 } //End draw()
 
 void keyPressed() {

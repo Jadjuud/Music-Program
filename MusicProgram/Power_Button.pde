@@ -13,7 +13,19 @@ void powerButton() {
 //
 void powerButtonDraw() {
   //Hoverover
-  //Text
+  if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) {
+    buttonColour = green;
+    fill(buttonColour);
+    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+    fill(reset);
+  }
+  else {
+    buttonColour = blue;
+    fill(buttonColour);
+    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+    fill(reset); 
+} 
+//Text
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
