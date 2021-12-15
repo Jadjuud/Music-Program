@@ -12,4 +12,5 @@ void keyPressed() {
 } //End keyPressed()
 
 void mousePressed() {
+  powerButtonMousePressed();
 } //End mousePressed 

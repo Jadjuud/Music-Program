@@ -17,5 +17,5 @@ void powerButtonDraw() {
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
-  if (mouseX> && mouseX< && mouseY> && mouseY< ) exit();
+  if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) exit();
 } //End powerButtonMousePressed()
