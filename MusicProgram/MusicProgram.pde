@@ -3,6 +3,7 @@
 void setup() {
   fullScreen();
   population();
+  textSetup();
 } //End setup()
 
 void draw() {

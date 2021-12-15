@@ -21,6 +21,7 @@ void powerButtonDraw() {
     hoverOverButtonFill();
   } 
   //Text
+   textCode(String string, int size, float rectX, float rectY, float rectWidth, float rectHeight)
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
