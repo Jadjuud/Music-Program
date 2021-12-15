@@ -15,19 +15,22 @@ void powerButtonDraw() {
   //Hoverover
   if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) {
     buttonColour = green;
-    fill(buttonColour);
-    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
-    fill(reset);
-  }
-  else {
+    hoverOverButtonFill();
+  } else {
     buttonColour = blue;
-    fill(buttonColour);
-    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
-    fill(reset); 
-} 
-//Text
+    hoverOverButtonFill();
+  } 
+  //Text
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
   if (mouseX>powerButtonX && mouseX<powerButtonX+powerButtondisplayWidth && mouseY>powerButtonY && mouseY<powerButtonY+powerButtondisplayHeight) exit();
 } //End powerButtonMousePressed()
+//
+void hoverOverButtonFill() {
+    fill(buttonColour);
+    noStroke();
+    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+    stroke(1); //reset stroke to 1 pixel
+    fill(reset);
+} //End hoverOverButtonFill()
