@@ -8,7 +8,7 @@ void powerButton() {
   powerButtonY = displayHeight*0/16;
   powerButtondisplayWidth = displayWidth*3/32;
   powerButtondisplayHeight = displayHeight*1/16;
-  rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight); 
+  rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
 } //End powerButton()
 //
 void powerButtonDraw() {
@@ -17,4 +17,5 @@ void powerButtonDraw() {
 } //End powerButtonDraw()
 //
 void powerButtonMousePressed() {
+  if (mouseX> && mouseX< && mouseY> && mouseY< ) exit();
 } //End powerButtonMousePressed()
