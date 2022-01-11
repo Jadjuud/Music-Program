@@ -11,22 +11,32 @@ Minim minim; //creates object to access all functions
 AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
 
 void setup() {
-  fullScreen();
+  fullScreen(); //fullScreen(), displayWidth, displayHeight
   population();
   textSetup();
   //
-  minim = new Minim(this);
-  song1 = minim.loadFile("Music/groove.mp3");
-  song1.play();
-} //End setup()
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  song1 = minim.loadFile("Music/groove.mp3"); //able to pass absolute path, file name, and URL
+  //song1.play(); //Parameter is milli-seconds from start of audio file to start playing
+}//End setup()
 
 void draw() {
   powerButtonDraw();
-} //End draw()
+}//End draw()
 
 void keyPressed() {
-} //End keyPressed()
+  if (key == 'p') {
+    if ( song1.isPlaying() ) {
+      song1.pause();
+    } else if ( song1.isPlaying() ) {
+      song1.rewind();
+      song1.play();
+    } else {
+      song1.play();
+    }
+  }
+}//End keyPressed()
 
 void mousePressed() {
   powerButtonMousePressed();
-} //End mousePressed 
+}//End mousepressed()
