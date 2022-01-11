@@ -1,3 +1,4 @@
+//Libraries
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
@@ -5,13 +6,9 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-//Libraries
-
-
 //Global Variables
-Minim minim; //creates objct to access all functions 
+Minim minim; //creates object to access all functions
 AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
-
 
 void setup() {
   fullScreen();
@@ -19,7 +16,7 @@ void setup() {
   textSetup();
   //
   minim = new Minim(this);
-  song1 = minim.loadFile("song name from file");
+  song1 = minim.loadFile("Music/groove.mp3");
   song1.play();
 } //End setup()
 
