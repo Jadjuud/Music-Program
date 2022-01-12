@@ -29,16 +29,27 @@ void keyPressed() {
   if (key == 'p') {
     if ( song1.isPlaying() ) {
       song1.pause();
+    } else if ( song1.position() >= song1.length() ) {
+      song1.pause();
+      song1.rewind();
+    }
+    else {
+      song1.play();
+    }
+  }
+  //Play-Stop
+  if (key == 's') {
+    if ( song1.isPlaying() ) {
+      song1.pause();
       song1.rewind();
     } else {
       song1.rewind();
     }
   }
-  //Play-Stop
-  if(key == 's') {
-    if (song1.isPlaying()) {} else{song1.rewind();}
-  }
-  
+  //FastForward
+  if (key == 'f') song1.skip(1000);
+  //FastRewind
+  if (key == 'r') song1.skip(-1000);
 }//End keyPressed()
 
 void mousePressed() {
