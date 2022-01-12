@@ -29,14 +29,16 @@ void keyPressed() {
   if (key == 'p') {
     if ( song1.isPlaying() ) {
       song1.pause();
+      song1.rewind();
     } else {
-      song1.play();
+      song1.rewind();
     }
   }
   //Play-Stop
   if(key == 's') {
     if (song1.isPlaying()) {} else{song1.rewind();}
   }
+  
 }//End keyPressed()
 
 void mousePressed() {
