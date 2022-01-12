@@ -33,6 +33,10 @@ void keyPressed() {
       song1.play();
     }
   }
+  //Play-Stop
+  if(key == 's') {
+    if (song1.isPlaying()) {} else{song1.rewind();}
+  }
 }//End keyPressed()
 
 void mousePressed() {
