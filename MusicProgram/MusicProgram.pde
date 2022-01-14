@@ -32,8 +32,7 @@ void keyPressed() {
     } else if ( song1.position() >= song1.length() ) {
       song1.pause();
       song1.rewind();
-    }
-    else {
+    } else {
       song1.play();
     }
   }

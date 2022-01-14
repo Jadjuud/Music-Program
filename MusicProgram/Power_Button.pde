@@ -30,9 +30,9 @@ void powerButtonMousePressed() {
 } //End powerButtonMousePressed()
 //
 void hoverOverButtonFill() {
-    fill(buttonColour);
-    noStroke();
-    rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
-    stroke(1); //reset stroke to 1 pixel
-    fill(reset);
+  fill(buttonColour);
+  noStroke();
+  rect(powerButtonX, powerButtonY, powerButtondisplayWidth, powerButtondisplayHeight);
+  stroke(1); //reset stroke to 1 pixel
+  fill(reset);
 } //End hoverOverButtonFill()
