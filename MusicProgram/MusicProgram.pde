@@ -23,7 +23,7 @@ void setup() {
 void draw() {
   powerButtonDraw();
   //
-  if (.isLooping()) println ("Is looping");
+  if (song1.isLooping()) println ("Is looping");
 }//End draw()
 
 void keyPressed() {
