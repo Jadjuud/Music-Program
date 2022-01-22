@@ -18,7 +18,7 @@ void setup() {
   textSetup();
   //
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
-  song[currentSong] = minim.loadFile("Music/groove.mp3"); //able to pass absolute path, file name, and URL
+  song[currentSong] = minim.loadFile("Music/MusicProgram.mp3"); //able to pass absolute path, file name, and URL
   song[currentSong+1] = minim.loadFile("Music/Beat_Your_Competition.mp3");
   song[currentSong+2] = minim.loadFile("Music/The_Simplest.mp3");
   //song1.play(); //Parameter is milli-seconds from start of audio file to start playing
